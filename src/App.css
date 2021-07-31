@@ -1,4 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
 .main {
-    height: 100vh;
-    background-color: beige;
+  position: relative;
+  height: 100vh;
+  background-color: beige;
+  background-image: url(https://images.unsplash.com/photo-1516542076529-1ea3854896f2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.home-title {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  flex-wrap: nowrap;
+}
+.home-title h1 {
+  color: seashell;
+  font-size: 7rem;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.contact-section h1 {
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+}
+.about-section h1 {
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+}
+.about-section p {
+  margin-top: 100px;
+}
+.contact-section,
+.about-section {
+  height: 100vh;
+  background-color: beige;
+}
+
+nav .container-fluid {
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+}
+
+nav {
+  height: 70px;
+  z-index: 20;
+}
+nav .nav-link {
+  color: whitesmoke !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo {
+  margin-left: 150px;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.ul {
+  margin-right: 150px;
+}
+.form {
+  position: relative;
+  top: 100px;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
