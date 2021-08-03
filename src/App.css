@@ -1,0 +1,48 @@
+.App {
+  position: relative;
+  height: 100vh;
+  background-color:rgb(10, 2, 2);
+  text-align: center;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: 600px auto;
+  grid-template-areas: "name photo" ;
+  overflow: hidden;
+  z-index: 5;
+}
+.part {
+  color: blue;
+}
+
+
+.profileImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: photo;
+  z-index: 6;
+}
+.fullName  {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  grid-area:name;
+}
+.address  {
+  grid-area:name;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+.info{
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  align-items: center;
+}
+.tsparticles-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
