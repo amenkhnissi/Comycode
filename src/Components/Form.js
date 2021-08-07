@@ -16,7 +16,10 @@ export const Form = () => {
     <input type="text" className="form-control" id="exampleInputPassword1"/>
   </div>
 
-  <div className="mb-3">  <textarea className="form-control"></textarea>
+  <div className="mb-3">
+          <label  className="form-label">Message</label>
+
+      <textarea className="form-control"></textarea>
 </div>
   <button type="submit" className="btn btn-primary">Submit</button>
 </form>
